@@ -1,6 +1,15 @@
 import streamlit as st
 from openai import OpenAI
 
+#mdefault page paarameters
+st.set_page_config(page_title='Labs', page_icon=None, layout="centered", initial_sidebar_state='auto', menu_items=None)
+
+lab1 = st.Page('lab2.py', title='LAB2', icon=None, url_path=None, default=True)
+lab2 = st.Page('lab2.py', title='LAB2', icon=None, url_path=None, default=True)
+
+pg= st.navigation([lab1, lab2])
+pg.run()
+
 # Show title and description.
 st.title("📄 Document question answering")
 st.write(
@@ -51,7 +60,4 @@ else:
 
         # Stream the response to the app using `st.write_stream`.
         st.write_stream(stream)
-        create_page = st.Page('lab1.py', title='LAB1', icon=None, url_path=None, default=False)
-        create_page = st.Page('lab2.py', title='LAB2', icon=None, url_path=None, default=True)
-
-        pg= st.navigation
+        

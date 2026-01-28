@@ -51,3 +51,7 @@ else:
 
         # Stream the response to the app using `st.write_stream`.
         st.write_stream(stream)
+        create_page = st.Page('lab1.py', title='LAB1', icon=None, url_path=None, default=False)
+        create_page = st.Page('lab2.py', title='LAB2', icon=None, url_path=None, default=True)
+
+        pg= st.navigation

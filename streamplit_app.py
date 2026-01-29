@@ -1,9 +1,6 @@
 import streamlit as st
 from openai import OpenAI
 
-import streamlit as st
-from openai import OpenAI
-
 lab01 = st.Page('./lab01.py', title='Lab 01: Build a Streamlit Document Q&A app')
 lab02 = st.Page('./lab02.py', title='Lab 02: Document Summarizer')
 
